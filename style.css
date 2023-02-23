@@ -8,10 +8,9 @@ body {
 }
 header {
     height: 100vh;
-    background-image: url(https://images.pexels.com/photos/792326/pexels-photo-792326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background:linear-gradient(rgba(3,4,7,0.48), rgba(5,10,30,0.48)), url(https://images.pexels.com/photos/792326/pexels-photo-792326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .header{
     color: #fff;
@@ -26,8 +25,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3% 7%;
-    background-color: lightblue;
+    padding: 2% 5%;
+    /* background-color: lightblue; */
 }
 nav ul li{
     display: inline-block;
@@ -35,15 +34,18 @@ nav ul li{
 }nav ul li a{
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 .header-text{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 70px;
+    margin-top: 10px;
 }
 /* ****************ABOUT ME SECTION****************** */
 .about{
@@ -81,7 +83,7 @@ nav ul li{
     padding-right: 5%;
 }
 .about-skills__h3--1{
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid #20E700;
     width: 5%;
     margin-right: 50px;
 }
@@ -91,26 +93,26 @@ nav ul li{
     height: 100vh;
     padding: 50px 0;
     text-align: center;
-    color: gray;
-    font-size: 60px;
+    color: #362D2D;
+    font-size: 40px;
 }
 .portfolio__container{
     display: grid;
-    grid-template-columns: repeat(auoto-fit minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 5%;
     grid-gap: 40px;
     margin-top: 50px;
 }
 .porfolio h2{
     margin-top: 1%;
-    font-size: 60px;
+    font-size: 80px;
 }
 .portfolio__img{
     border-radius: 10px;
     position: relative;
 
 }
-.porfolio__img img{
+.portfolio__img img{
     object-fit:cover;
     width: 100%;
     height: 400px;
@@ -118,17 +120,118 @@ nav ul li{
     display: block;
 }
 .portfolio-btn{
-    background-color: green;
+    background-color: #45893A;
     color: #fff;
-    height: 84px;
-    width: 287px;
+    
+    width: 50px;
     border-radius: 10px;
     text-decoration: none;
     padding: .5% 1%;
+    font-size: 30px;
 }
-/* CONTACT SECTION */
-/* .contact{
+/* *****************CONTACT SECTION******************* */
+.contact{
     background-color: #321D2D;
     height: 100vh;
+    margin-top: 300px;
+    padding: 5%;
+    color: #fff;
+}
+.contact-rows{
+    display: flex;
+    flex-direction: row;
+}
+.contact h2{
+    font-size: 60px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #20E700;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-left__icons{
+    margin-top: 15px;
+}
+.contact__icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #D9D9D9;
+    display: inline-block;
+}
+.contact-left__icons a:hover{
+    color: #45893A;
+    transform: translateY(-5px);
+}
+.contact__btn{
+    display: block;
+    margin: 50px auto;
+    border: 1px solid #2ecc71;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+.contact__btn:hover{
+    background: #2ecc71;
+}
+.contact__btn.contact__btn--1{
+    display: inline-block;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #141414;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border:6px;
+}
+.contact__btn.contact__btn--2{
+    display: inline-block;
+    background-color: #312D2D;
+    font-size: 18px;
+}
+.contact__btn--2:hover{
+    background-color: #2ecc71;
+    cursor: pointer;
+}
+footer{
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+    background-color: #D9D9D9;
+    font-weight: 300;
+}
 
-} */
+/* *******************FOOTER SECTION**************** */
+@media only screen and (max-width: 600px;){
+
+}
+
+/* -------------------MEDIA QUEREIS------------------ */
+
+
+/* -------------------HERO SECTION-------------------- */
+
+/* -------------------ABOUT SECTION-------------------- */
+
+/* -------------------CONTACT SECTION-------------------- */
+
+/* -------------------FOOTER SECTION-------------------- */
