@@ -321,6 +321,18 @@ footer {
         margin-left: 10%;
     }
 }
+/* *******************Portfolio section********************** */
+@media only screen and (max-width: 600px){
+    .portfolio{
+        height: 180vh;
+
+    }
+    .portfolio__img img{
+        width: 70%;
+        height: 280px;
+        margin: 0 auto;
+    }
+}
 /* -------------------MEDIA QUEREIS------------------ */
 
 /* -------------------HERO SECTION-------------------- */
