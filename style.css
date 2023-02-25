@@ -291,6 +291,16 @@ footer {
         text-align: center;
         padding: 0 3% 5% 0;
     }
+    .about-img img{
+        height: 200px;
+        width: 257px;
+        border-radius: 10px;
+        transition-delay: 0.01s;
+    }
+    .about-img img:hover{
+        transform: translate(-5px, -10px);
+        cursor: pointer;
+    }
 }
 /* -------------------MEDIA QUEREIS------------------ */
 
