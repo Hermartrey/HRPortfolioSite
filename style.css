@@ -222,6 +222,7 @@ form textarea {
   display: inline-block;
   background-color: #312d2d;
   font-size: 18px;
+  margin: 0 auto;
 }
 .contact__btn--2:hover {
   background-color: #2ecc71;
@@ -357,7 +358,7 @@ footer {
     .contact-rows{
         flex-direction: column;
     }
-    .contect-left, .contact-right{
+    .contact-left, .contact-right{
         flex-basis: 100%;
     }
 }
