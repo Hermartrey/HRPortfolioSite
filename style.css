@@ -118,6 +118,12 @@ nav ul li a {
   margin-top: 1%;
   font-size: 80px;
 }
+.portfolio__img{
+    transition: .5s ease-in;
+}
+.portfolio__img:hover{
+    transform: scale(1,1);
+}
 .portfolio__img {
   border-radius: 10px;
   position: relative;
@@ -331,6 +337,7 @@ footer {
         font-size: 50px;
         padding-top: 0;
     }
+    
     .portfolio__img img{
         width: 70%;
         height: 280px;
@@ -341,11 +348,18 @@ footer {
         font-size: 4rem;
     }
 }
-/* -------------------MEDIA QUEREIS------------------ */
-
-/* -------------------HERO SECTION-------------------- */
-
 
 /* -------------------CONTACT SECTION-------------------- */
+@media only screen and(max-width:600px){
+    .contact{
+        height: 200vh;
+    }
+    .contact-rows{
+        flex-direction: column;
+    }
+    .contect-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
 
 /* -------------------FOOTER SECTION-------------------- */
