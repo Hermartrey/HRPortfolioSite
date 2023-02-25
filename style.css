@@ -276,11 +276,22 @@ footer {
     }
 }
 
+/* -------------------ABOUT SECTION-------------------- */
+@media only screen and (max-width: 600px){
+    .about{
+        padding-top: 10%;
+        height: 150vh;
+    }
+    .about-img{
+        display: block;
+        text-align: center;
+        padding: 0 3% 5% 0;
+    }
+}
 /* -------------------MEDIA QUEREIS------------------ */
 
 /* -------------------HERO SECTION-------------------- */
 
-/* -------------------ABOUT SECTION-------------------- */
 
 /* -------------------CONTACT SECTION-------------------- */
 
